@@ -97,7 +97,9 @@ app.use('/api', indexRouter);
 app.use('/api/contact-list', contactRouter); //TODO - Protect this section
 app.use('/favourite-list', thingRouter);
 
-// TODO - need to capture random links or incorrect url info
+app.get('*', (req, res) => {
+    res.sendfile(path.join(__dirname, '../../public/index.html'));
+});
 
 
 // catch 404 and forward to error handler
