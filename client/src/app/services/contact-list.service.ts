@@ -12,8 +12,8 @@ import { User } from '../models/user';
 export class ContactListService {
   private user: User;
 
-  private contact: Contact;
   private endpoint = 'http://localhost:3000/api/contact-list/';
+
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export class ContactListService {
   }
 
   public getContact(contact: Contact): Observable<any> {
-    return this.http.get<any>(this.endpoint + 'edit/' + contact._ID, this.httpOptions);
+    return this.http.get<any>(this.endpoint + 'edit/' + contact._id, this.httpOptions);
   }
 
   public addContact(contact: Contact): Observable<any> {
@@ -37,10 +37,10 @@ export class ContactListService {
   }
 
   public editContact(contact: Contact): Observable<any> {
-    return this.http.post<any>(this.endpoint + 'edit/' + contact._ID, contact, this.httpOptions);
+    return this.http.post<any>(this.endpoint + 'edit/' + contact._id, contact, this.httpOptions);
   }
 
   public deleteContact(contact: Contact): Observable<any> {
-    return this.http.delete<any>(this.endpoint + 'delete/' + contact._ID, this.httpOptions);
+    return this.http.get<any>(this.endpoint + 'delete/' + contact._id, this.httpOptions);
   }
 }
