@@ -1,5 +1,5 @@
 {
-    "name": "week-8",
+    "name": "week-9",
     "version": "0.0.1",
     "private": true,
     "scripts": {
@@ -52,10 +52,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/watteh/COMP308-W2019-Lesson4.git"
+        "url": "git+https://github.com/watteh/COMP308-W2019-Lesson9.git"
     },
     "bugs": {
-        "url": "https://github.com/watteh/COMP308-W2019-Lesson8/issues"
+        "url": "https://github.com/watteh/COMP308-W2019-Lesson9/issues"
     },
-    "homepage": "https://github.com/watteh/COMP308-W2019-Lesson8#readme"
+    "homepage": "https://github.com/watteh/COMP308-W2019-Lesson9#readme"
 }
