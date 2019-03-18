@@ -23,6 +23,13 @@ export class ContactListComponent implements OnInit {
 
     this.displayContactList();
   }
+
+  private onDeleteClick(): void {
+    if (!confirm('Are you sure?')) {
+      this.router.navigate(['/contact/contact-list']);
+    }
+  }
+
   displayContactList(): void {
     this.contactListService.getList().subscribe(data => {
       if (data.success) {
